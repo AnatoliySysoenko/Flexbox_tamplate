@@ -1,0 +1,51 @@
+/** @format */
+
+.header-menu {
+  display: flex;
+  flex-direction: column;
+  background: rgba($color-dark, 0.3);
+  align-items: center;
+
+  &__btn {
+    @include sm_min {
+      display: none;
+    }
+    @include sm {
+      display: flex;
+    }
+  }
+
+  &__list {
+    @include unlist;
+
+    @include sm-min {
+      display: flex;
+    }
+
+    &-item {
+      & a {
+        transition: color 0.5s;
+      }
+      & a:focus,
+      & a:hover {
+        color: $color-accent;
+        background: rgba($color-dark, 0.3);
+        @include text-shadow;
+      }
+
+      &.active a {
+        color: $color-accent-dark;
+        background: rgba($color-dark, 0.4);
+        @include text-shadow;
+      }
+    }
+    &-link {
+      display: block;
+      padding: $gap-xs $gap-sm;
+      margin: 5px;
+      color: $color-light;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+  }
+}

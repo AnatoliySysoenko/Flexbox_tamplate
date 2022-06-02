@@ -1,4 +1,9 @@
-/* xl */
+/**
+ * /* xl
+ *
+ * @format
+ */
+
 @mixin xl-lg {
   @media (max-width: $xl - 0.2) and (min-width: $lg) {
     @content;
