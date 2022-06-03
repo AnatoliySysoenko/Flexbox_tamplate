@@ -58,7 +58,7 @@
   }
   &:hover .main-content-item__excerpt {
     display: block;
-    top: 30px;
+    top: $gap;
     background-color: rgba($color-dark, 0.8);
     color: $color-light;
   }

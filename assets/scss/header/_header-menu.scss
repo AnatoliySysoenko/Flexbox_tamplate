@@ -87,12 +87,12 @@
     }
 
     &-item {
-      // & a {
-      //   transition: color 0.5s;
-      // }
+      & a {
+        transition: color 0.5s;
+      }
       & a:focus,
       & a:hover {
-        // color: $color-accent;
+        color: $color-accent;
         background-color: rgba($color-dark, 0.3);
         @include text-shadow;
       }
