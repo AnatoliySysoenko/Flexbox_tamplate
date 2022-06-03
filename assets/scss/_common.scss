@@ -1,8 +1,4 @@
 /** @format */
-// @import "skin";
-// @import "variables";
-// @import "mixins";
-// @import "mixins-media";
 
 *,
 *::before,
@@ -37,7 +33,26 @@ body {
   }
 }
 
+h1 {
+  font-family: $font-header;
+}
+
 a {
   text-decoration: none;
   color: $color-light;
+}
+
+.container {
+  display: flex;
+
+  @include lg {
+    flex-wrap: wrap;
+  }
+}
+
+.img-responsive {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
