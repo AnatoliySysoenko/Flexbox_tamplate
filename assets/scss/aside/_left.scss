@@ -8,13 +8,17 @@
   @include md-min {
     width: 50%;
     order: 1;
-    padding: 7.5px;
+    // padding-right: 7.5px;
   }
   @include xs {
     order: 2;
     width: 100%;
     margin-bottom: 0;
   }
+}
+
+.widget:last-of-type {
+  margin-bottom: 0;
 }
 
 .widget-search {
@@ -31,6 +35,8 @@
     border-radius: 4px;
     border: 1px solid rgba($color-light, 0.15);
     background-color: rgba($color-light, 0.1);
+    font-family: $font-main;
+    font-weight: 400;
 
     &::placeholder {
       color: $color-gray;
@@ -38,7 +44,7 @@
   }
   &__submit {
     position: absolute;
-    top: 1px;
+    top: 0;
     bottom: 1px;
     left: 1px;
     padding: 5px 7px;
@@ -47,5 +53,24 @@
     border: none;
     border-right: 1px solid rgba($color-light, 0.1);
     background-color: transparent;
+  }
+}
+
+.widget-categories {
+  &__list {
+    @include unlist;
+  }
+
+  &__item a {
+    display: block;
+    padding: 5px 0;
+  }
+}
+
+.widget-text p {
+  line-height: 2em;
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }

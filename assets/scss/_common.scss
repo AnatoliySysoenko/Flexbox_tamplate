@@ -42,6 +42,10 @@ a {
   color: $color-light;
 }
 
+p {
+  color: $color-gray;
+}
+
 .container {
   display: flex;
 
@@ -63,7 +67,7 @@ a {
   border-radius: 7px;
   margin: 0 0 $gap-sm;
 
-  h3 {
+  & h3 {
     margin-top: 5px;
     padding-bottom: 10px;
     font-family: $font-header;
@@ -71,8 +75,4 @@ a {
     letter-spacing: 0.09em;
     border-bottom: 1px solid rgba($color-dark, 0.4);
   }
-}
-
-.widget:last-of-type {
-  margin-bottom: 0;
 }
