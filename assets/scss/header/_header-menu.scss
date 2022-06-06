@@ -2,26 +2,32 @@
 
 .header-menu {
   display: flex;
-  flex-direction: column;
-  background: rgba($color-dark, 0.3);
   align-items: center;
+  flex-direction: column;
+
+  background: rgba($color-dark, 0.3);
 
   &__btn {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+
+    cursor: pointer;
+
+    background-color: rgba($color-dark, 0.2);
+
     @include sm_min {
       display: none;
     }
     @include sm {
       display: flex;
     }
-    display: flex;
-    flex-direction: column;
-    background-color: rgba($color-dark, 0.2);
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
 
     &--active .header-menu__btn-row {
       &:nth-of-type(1) {
@@ -42,15 +48,19 @@
     }
 
     &-row {
-      margin-top: $gap-sm;
       position: absolute;
       top: 0;
       left: $gap-xs;
+
       display: block;
+
       width: 60%;
       height: 2px;
+      margin-top: $gap-sm;
+
       transition: 0.25s ease-in-out;
       transform: rotate(0deg);
+
       opacity: 1;
       border-radius: 2.5px;
       background-color: $color-light;
@@ -71,15 +81,16 @@
 
   &__list {
     @include unlist;
-
     @include sm-min {
       display: flex;
     }
     @include sm {
       display: none;
-      width: 100%;
-      text-align: center;
       justify-content: center;
+
+      width: 100%;
+
+      text-align: center;
 
       &--active {
         display: block;
@@ -94,12 +105,14 @@
       & a:hover {
         color: $color-accent;
         background-color: rgba($color-dark, 0.3);
+
         @include text-shadow;
       }
 
       &.active a {
         color: $color-accent-dark;
         background-color: rgba($color-dark, 0.4);
+
         @include text-shadow;
       }
     }
@@ -110,7 +123,9 @@
     }
     &-link {
       display: block;
+
       padding: $gap-xs $gap-sm;
+
       border-radius: 4px;
 
       @include sm-min {

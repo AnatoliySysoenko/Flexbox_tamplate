@@ -2,6 +2,7 @@
 
 .right {
   order: 3;
+
   margin-bottom: $gap-sm;
 
   @include lg-min {
@@ -31,13 +32,14 @@
     & a:focus h4,
     & a:hover h4 {
       color: $color-accent;
+
       @include text-shadow;
     }
     & a:hover .widget-news__item-wrapper {
       background: radial-gradient(
-        ellipse at center,
-        rgba($color-dark, 0.65) 0%,
-        rgba($color-dark, 0) 100%
+      ellipse at center,
+      rgba($color-dark, 0.65) 0%,
+      rgba($color-dark, 0) 100%
       );
     }
     & a:hover img {
@@ -51,6 +53,7 @@
     &-wrapper {
       display: flex;
       flex-wrap: wrap;
+
       margin: 0 (-$gap-sm) $gap-xxs;
       padding: 0 $gap-sm $gap-xxs;
     }
@@ -58,19 +61,24 @@
     &-title {
       display: block;
       overflow: hidden;
+
       width: 100%;
       margin: 0 0 $gap-xs;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      letter-spacing: 1px;
+
       transition: color 0.5s;
+      white-space: nowrap;
+      letter-spacing: 1px;
+      text-overflow: ellipsis;
+
       font-weight: 300;
     }
 
     &-image {
+      overflow: hidden;
+
       width: 75px;
       height: 75px;
-      overflow: hidden;
+
       border-radius: 4px;
 
       img {
@@ -81,7 +89,9 @@
     &-excerpt {
       width: calc(100% - 75px);
       padding-left: $gap-xs;
+
       transition: color 0.5s;
+
       color: $color-gray;
 
       @include block-with-text;

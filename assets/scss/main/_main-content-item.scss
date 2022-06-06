@@ -1,8 +1,9 @@
 /** @format */
 
 .main-content__item {
-  padding: $gap-xxs;
   position: relative;
+
+  padding: $gap-xxs;
 
   @include sm-min {
     flex: 0 0 33.3333%;
@@ -16,28 +17,35 @@
 
   &-wrapper {
     position: relative;
+
+    overflow: hidden;
+
     border: 5px solid rgba($color-dark, 0.5);
     border-radius: 7px;
-    overflow: hidden;
   }
 
   &-title {
     position: absolute;
     top: 0;
     left: 0;
+
     display: block;
     overflow: hidden;
+
     width: 100%;
     width: 100%;
     height: $gap;
     margin: 0;
     padding: 7px;
+
     transition: color 0.5s;
     text-align: center;
     white-space: nowrap;
     letter-spacing: 0.0714em;
     text-overflow: ellipsis;
+
     background-color: rgba($color-dark, 0.5);
+
     font-size: 1rem;
     font-weight: 300;
     line-height: 1em;
@@ -49,18 +57,22 @@
     position: absolute;
     top: 210%;
     left: 0;
+
     width: 100%;
     height: calc(100% - 27px);
     margin: 0;
     padding: $gap-sm;
+
     transition: top 0.5s ease-out, background-color 0.5s ease-out;
     text-align: center;
   }
   &:hover .main-content__item-excerpt {
-    display: block;
     top: $gap;
-    background-color: rgba($color-dark, 0.8);
+
+    display: block;
+
     color: $color-light;
+    background-color: rgba($color-dark, 0.8);
   }
   &:hover .main-content__item-title {
     color: $color-accent;

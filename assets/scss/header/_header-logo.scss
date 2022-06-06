@@ -2,13 +2,12 @@
 
 .header-logo {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 
   @include sm-min {
     padding: $gap-lg $gap-sm;
   }
-
   @include sm {
     padding: $gap $gap-sm;
   }
@@ -20,12 +19,10 @@
       max-width: 400px;
       margin-bottom: $gap;
     }
-
     @include sm-xx {
       max-width: 300px;
       margin-bottom: $gap-sm;
     }
-
     @include xx {
       width: 80%;
       margin-bottom: $gap-sm;
@@ -34,37 +31,44 @@
 
   &__title {
     display: block;
+
     margin-bottom: $gap-sm;
+
     font-family: $font-header;
     font-weight: 300;
 
     @include sm-min {
+      letter-spacing: 0.119em;
+
       font-size: 3rem;
       line-height: 3.5rem;
-      letter-spacing: 0.119em;
     }
     @include sm-xs {
+      letter-spacing: 0.178em;
+
       font-size: 2rem;
       line-height: 2.5rem;
-      letter-spacing: 0.178em;
     }
     @include xs {
+      letter-spacing: 0.238em;
+
       font-size: 1.5rem;
       line-height: 2rem;
-      letter-spacing: 0.238em;
     }
   }
 
   &__description {
-    letter-spacing: 0.2em;
-    font-weight: 700;
     text-align: center;
+    letter-spacing: 0.2em;
+
+    font-weight: 700;
 
     @include sm {
-      font-size: 0.875rem;
       letter-spacing: 0.1em;
-      line-height: 1.25em;
+
+      font-size: 0.875rem;
       font-weight: 400;
+      line-height: 1.25em;
     }
   }
 }
