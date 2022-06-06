@@ -81,7 +81,7 @@
     transition: padding-left 0.5s;
 
     &:hover {
-      padding-left: 10px;
+      padding-left: $gap-xs;
 
       color: $color-accent;
       border-radius: 7px;
