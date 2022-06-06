@@ -66,13 +66,14 @@ p {
   padding: $gap-sm;
   border-radius: 7px;
   margin: 0 0 $gap-sm;
+  color: $color-light;
 
   & h3 {
     margin-top: 5px;
     padding-bottom: 10px;
     font-family: $font-header;
     font-weight: 300;
-    letter-spacing: 0.09em;
+    letter-spacing: 0.092em;
     border-bottom: 1px solid rgba($color-dark, 0.4);
   }
 }
