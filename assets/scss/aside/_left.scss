@@ -65,6 +65,15 @@
   &__item a {
     display: block;
     padding: 5px 0;
+    transition: padding-left 0.5s;
+
+    &:hover {
+      padding-left: 10px;
+      color: $color-accent;
+      background: rgba($color-dark, 0.5);
+      border-radius: 7px;
+      @include text-shadow;
+    }
   }
 }
 

@@ -6,8 +6,8 @@
 
   @include lg-min {
     flex: 0 0 calc(100% - 220px - 240px);
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: $gap;
+    padding-left: $gap;
   }
   @include lg-md {
     flex: 0 0 calc(100% - 220px);
