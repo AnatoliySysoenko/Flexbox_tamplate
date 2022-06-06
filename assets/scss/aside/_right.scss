@@ -2,15 +2,14 @@
 
 .right {
   order: 3;
+  margin-bottom: $gap-sm;
 
   @include lg-min {
     flex: 0 0 240px;
     order: 2;
-    margin-bottom: $gap-sm;
   }
   @include lg-md {
     width: 100%;
-    margin-bottom: $gap-sm;
   }
   @include md-xs {
     width: 50%;
